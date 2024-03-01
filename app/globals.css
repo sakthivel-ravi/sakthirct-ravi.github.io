@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #fafafa;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+}
+
+@layer utilities {
+  .primary-bg {
+    @apply bg-[#A91A1A];
+  }
+  .gray-light-bg {
+    @apply bg-[#F2F2F2];
+  }
+  .gray-light-bg-two {
+    @apply bg-[#EDF2F7];
+  }
+  .gray-dark-bg {
+    @apply bg-[#373D3F];
+  }
+  .grey-border {
+    @apply border border-solid border-[#E6E6E6];
+  }
+  .grey-border-two {
+    @apply border border-solid border-[#F0F0F0];
+  }
+  .red-top-border {
+    @apply border-t-[5px] border-solid border-[#E2434B];
+  }
+  .green-top-border {
+    @apply border-t-[5px] border-solid border-[#08C299];
+  }
+  .blue-top-border {
+    @apply border-t-[5px] border-solid border-[#429FFD];
+  }
+  .yellow-top-border {
+    @apply border-t-[5px] border-solid border-[#E5B046];
+  }
+  .pink-top-border {
+    @apply border-t-[5px] border-solid border-[#E54594];
+  }
+  .box-shadow-small {
+    @apply shadow-[0_10px_4px_0_rgba(17,17,17,0.2)];
+  }
+  .box-shadow-small-two {
+    @apply shadow-[0_4px_4px_0_rgba(17,17,17,0.05)];
+  }
+  .box-shadow-small-three {
+    @apply shadow-[0_4px_4px_0_rgba(152,149,149,0.25)];
+  }
+  .text-primary {
+    @apply text-[#111111];
+  }
+  .text-secondary {
+    @apply text-[rgba(17,17,17,.6)];
+  }
+  .text-light-gray {
+    @apply text-[#757575];
+  }
+  .text-custom-green {
+    @apply text-[#1A8917];
+  }
+}
+
+.ant-btn .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #292929;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ant-btn,
+.ant-tabs-tab-btn {
+  transition: transform 0.3s, opacity 0.3s !important;
+}
+
+.ant-btn .ant-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+  color: #292929;
+}
+
+.ant-btn .ant-tabs .ant-tabs-ink-bar {
+  width: 0px !important;
+}
+
+.ant-btn .ant-tabs-nav {
+  border-bottom: 1px solid #e6e6e6;
+  width: 63%;
+}
+
+/* Tooltip tail */
+.tooltip {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #373d3f;
+  left: 242px;
+  top: -8px;
+}
